@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 
@@ -15,6 +16,10 @@ namespace Application02.Models
 
     public class MusicContext : DbContext
     {
+        public MusicContext()
+        {
+            Database.Log = s => Debug.WriteLine(s);
+        }
         public DbSet<Albam> Albams { get; set; }
     }
 
