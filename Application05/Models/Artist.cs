@@ -14,6 +14,9 @@ namespace Application05.Models
         [StringLength(100, MinimumLength = 2)]
         public string Name { get; set; }
 
+
+
         public virtual List<Albam> Albums { get; set; }
+        public virtual ArtistDetails ArtistDetails { get; set; }
     }
 }

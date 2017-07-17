@@ -205,6 +205,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Albam.cs" />
     <Compile Include="Models\Artist.cs" />
+    <Compile Include="Models\ArtistDetails.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MusicStoreDataContext.cs" />

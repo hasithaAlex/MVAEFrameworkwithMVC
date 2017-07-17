@@ -10,5 +10,7 @@ namespace Application05.Models
     {
         public DbSet<Artist> Artists { get; set; }
         public DbSet<Albam> Albams { get; set; }
+
+        //public DbSet<ArtistDetails> ArtistDetails { get; set; }
     }
 }
