@@ -212,6 +212,8 @@
     <Compile Include="Models\MusicStoreDataContextInitializer.cs" />
     <Compile Include="Models\Repositories\ArtistRepository.cs" />
     <Compile Include="Models\Repositories\Repository.cs" />
+    <Compile Include="Models\Reviewers.cs" />
+    <Compile Include="Models\SoloArtist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -276,6 +278,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Artist\Index.cshtml" />
     <Content Include="Views\Artist\Details.cshtml" />
+    <Content Include="Views\Artist\SoloIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

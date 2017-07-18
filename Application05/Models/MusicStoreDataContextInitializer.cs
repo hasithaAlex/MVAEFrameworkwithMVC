@@ -14,12 +14,14 @@ namespace Application05.Models
             context.Artists.Add(artist01);
             context.Albams.Add(new Albam { Artist = artist01, Title = "This Year's LOVE" });
             context.Albams.Add(new Albam { Artist = artist01, Title = "Next Year's LOVE" });
-            
             context.Albams.Add(
             new Albam {
                 Artist = new Artist { Name = "Second Artist" },
                 Title = "Holaluya"
             });
+
+            context.Artists.Add(new SoloArtist() { Name = "SOLO Artist", Instrument="Gutar" });
+
             context.SaveChanges();
         }
 

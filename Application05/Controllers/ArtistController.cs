@@ -17,6 +17,11 @@ namespace Application05.Controllers
             return View(repository.GetAll());
         }
 
+        public ActionResult SoloIndex()
+        {
+            return View(repository.GetSoloArtists());
+        }
+
 
         public ActionResult Details(int id)
         {

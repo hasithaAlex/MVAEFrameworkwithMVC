@@ -11,5 +11,9 @@ namespace Application05.Models.Repositories
         {
             return DbSet.Where(a => a.Name.Contains(name)).ToList();
         }
+        public List<SoloArtist> GetSoloArtists()
+        {
+            return DbSet.OfType<SoloArtist>().ToList();
+        }
     }
 }
